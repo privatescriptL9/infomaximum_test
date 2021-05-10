@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import './libs/normalize.scss';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 266.67px;
+    background: #afb9d7;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #8b99c9;
+    border-radius: 20px;
+    height: 266.67px;
+  }
+}
+
+a {
+  text-decoration: none;
+}

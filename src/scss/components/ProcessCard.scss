@@ -1,0 +1,196 @@
+.ProcessCard {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  height: calc(202px + 50 * (100vh / 1080));
+
+  // header
+  header {
+    border-bottom: 1px solid #d6dce9;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 24px;
+      color: #6879bb;
+
+      h1 {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        cursor: not-allowed;
+        padding: 0 !important;
+        user-select: none;
+
+        a {
+          display: flex;
+          align-items: center;
+          pointer-events: none;
+
+          span {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            color: #6879bb;
+            opacity: 0.5;
+          }
+
+          svg {
+            path {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //main
+  .card {
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+
+    .container {
+      display: flex;
+      height: 100%;
+      width: 80%;
+      justify-content: space-around;
+      align-items: center;
+
+      .container__performed {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 80%;
+
+        div {
+          display: flex;
+
+          .col-1 {
+            margin: 8px 16px 0 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .col-2 {
+            flex-direction: column;
+            height: 100%;
+
+            h2 {
+              margin: 0;
+              padding: 0 !important;
+              color: #535374;
+              font-weight: bold;
+              font-size: 26px;
+              line-height: 35px;
+            }
+          }
+        }
+      }
+
+      .container__processes {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: column;
+
+        .container__process {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          div {
+            display: flex;
+
+            .col-1 {
+              margin: 4px 16px 0 0;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+            }
+
+            .col-2 {
+              width: 100%;
+              flex-direction: column;
+
+              h4 {
+                margin: 0;
+                padding: 0;
+                color: #535374;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 25px;
+              }
+            }
+          }
+        }
+      }
+
+      .container__period {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75%;
+
+        div {
+          display: flex;
+          width: 100%;
+          height: 90%;
+          justify-content: space-around;
+
+          div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .black {
+              color: #333333;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  span {
+    color: #999999;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .section {
+    width: 20%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .card {
+    .container {
+      width: 96% !important;
+    }
+
+    .section {
+      width: 21% !important;
+    }
+  }
+}
