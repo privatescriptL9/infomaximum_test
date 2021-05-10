@@ -1,0 +1,17 @@
+.ProfilePage {
+  width: 100%;
+  height: calc(100% - 60px);
+
+  .Profile-card {
+    margin: 30px 22px 0;
+
+    .card-body {
+      box-sizing: border-box;
+      border-radius: 2px;
+      width: 100%;
+      min-height: 325px;
+      background-color: #ffffff;
+      padding: 24px 24px 14px 24px;
+    }
+  }
+}

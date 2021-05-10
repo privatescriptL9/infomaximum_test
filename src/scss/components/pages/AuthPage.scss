@@ -1,0 +1,20 @@
+.AuthPage {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 48px;
+
+  .wrapper {
+    height: 60px;
+
+    .error {
+      color: #ee4141;
+      font-size: 12px;
+    }
+  }
+
+  a {
+    color: #3167ba;
+    margin-top: 18px;
+    max-width: 140px;
+  }
+}

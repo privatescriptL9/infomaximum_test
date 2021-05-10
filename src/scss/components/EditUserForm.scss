@@ -1,0 +1,39 @@
+.EditUserForm {
+  .card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+
+    h1 {
+      color: #404064;
+      font-weight: 700;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .wrapper {
+    height: 60px;
+    display: flex;
+    align-items: flex-start;
+
+    div {
+      width: calc(205px + 330 * (100vw / 1920)) !important;
+    }
+
+    label {
+      width: 271px;
+      color: #999999;
+      min-height: 40px;
+      display: flex;
+      align-items: center;
+    }
+
+    .error {
+      font-size: 12px;
+      line-height: 16px;
+      color: #ee4141;
+    }
+  }
+}

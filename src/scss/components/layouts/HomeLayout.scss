@@ -1,0 +1,25 @@
+.HomeLayout {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ebf2fb;
+
+  .header {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 1px 10px rgba(104, 121, 187, 0.1);
+    height: 60px;
+    display: flex;
+    font-weight: 700;
+    color: #6879bb;
+
+    div {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      svg {
+        margin: 0 16px 0 28px;
+      }
+    }
+  }
+}
